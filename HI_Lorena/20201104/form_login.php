@@ -30,7 +30,7 @@
         $(".autenticar").click(function(){
             var senha = $.md5($("input[name='senha']").val());
             $("input[name='senha']").val(senha);
-            $("#autenticar").attr("disabled", true);
+            $(".autenticar").attr("disabled", true);
             $("form[name='form']").submit();
         });
     });
